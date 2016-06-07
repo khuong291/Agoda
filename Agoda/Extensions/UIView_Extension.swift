@@ -15,8 +15,7 @@ extension UIView {
     }
 
     func makeViewCorner() {
-        self.layer.cornerRadius = 3
+        self.layer.cornerRadius = 4
         self.clipsToBounds = true
-
     }
 }

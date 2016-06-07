@@ -237,6 +237,10 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3Z-hT-epT" userLabel="DarkBlurView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-64-X7K">
                                 <rect key="frame" x="20" y="20" width="30" height="30"/>
                                 <constraints>
@@ -257,8 +261,13 @@
                             <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" constant="15" id="JhG-dD-7Uc"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="leading" secondItem="KRT-vN-Eap" secondAttribute="leading" id="Lxb-9N-iTn"/>
                             <constraint firstItem="puH-7G-yAO" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" id="Q64-mC-hiU"/>
+                            <constraint firstItem="KRT-vN-Eap" firstAttribute="top" secondItem="N3Z-hT-epT" secondAttribute="bottom" id="QDB-kX-vGm"/>
+                            <constraint firstItem="N3Z-hT-epT" firstAttribute="top" secondItem="emk-xf-s4c" secondAttribute="topMargin" id="RPk-P0-bOM"/>
+                            <constraint firstItem="N3Z-hT-epT" firstAttribute="top" secondItem="puH-7G-yAO" secondAttribute="bottom" id="Rds-Xj-eXB"/>
+                            <constraint firstItem="N3Z-hT-epT" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" id="Soy-b0-5zx"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="leading" secondItem="YrZ-Dl-Pxa" secondAttribute="leading" id="TqI-WO-Spc"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="top" secondItem="KRT-vN-Eap" secondAttribute="top" id="VjS-UZ-WU6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="N3Z-hT-epT" secondAttribute="bottom" id="b1c-Gk-rGo"/>
                             <constraint firstItem="y1Q-lm-nkZ" firstAttribute="top" secondItem="KRT-vN-Eap" secondAttribute="bottom" constant="8" id="cEW-dH-2hT"/>
                             <constraint firstAttribute="trailing" secondItem="puH-7G-yAO" secondAttribute="trailing" id="cYi-Iw-2AX"/>
                             <constraint firstAttribute="trailing" secondItem="KRT-vN-Eap" secondAttribute="trailing" constant="8" id="cwv-w8-ozs"/>
@@ -270,12 +279,15 @@
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="bottom" secondItem="KRT-vN-Eap" secondAttribute="bottom" id="oR9-U0-iAM"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="top" secondItem="YrZ-Dl-Pxa" secondAttribute="top" id="pVr-nO-hWe"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="bottom" secondItem="YrZ-Dl-Pxa" secondAttribute="bottom" id="rBb-BR-5pL"/>
+                            <constraint firstAttribute="trailing" secondItem="N3Z-hT-epT" secondAttribute="trailing" id="sDO-BU-xhO"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="trailing" secondItem="KRT-vN-Eap" secondAttribute="trailing" id="zwV-ee-flb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Rds-Xj-eXB"/>
                                 <exclude reference="gkx-Hu-Wl6"/>
                                 <exclude reference="npj-2q-Aej"/>
+                                <exclude reference="QDB-kX-vGm"/>
                             </mask>
                         </variation>
                     </view>
@@ -286,6 +298,7 @@
                         <outlet property="checkDateView" destination="mLX-pG-UD8" id="wqS-3P-3nS"/>
                         <outlet property="checkInView" destination="sPo-Ya-cKj" id="T2G-tU-CjO"/>
                         <outlet property="checkOutView" destination="mGG-Gf-ElB" id="HlH-OE-xJO"/>
+                        <outlet property="darkBlurView" destination="N3Z-hT-epT" id="sN3-Qz-4ru"/>
                         <outlet property="darkView" destination="gYV-Qd-mQQ" id="RWA-Zk-oIZ"/>
                         <outlet property="greenBlurView" destination="b5K-q8-ShC" id="BUl-ns-mA0"/>
                         <outlet property="infoView" destination="zfr-l3-5Dp" id="UYr-4X-LhO"/>

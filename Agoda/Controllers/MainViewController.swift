@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var greenBlurView: UIView!
     @IBOutlet var bottomView: UIView!
+    @IBOutlet var darkBlurView: UIView!
 
     var menuShowed = false
 
@@ -82,6 +83,7 @@ class MainViewController: UIViewController {
             UIView.animateWithDuration(0.3, delay: 0.0, options: [.CurveEaseInOut], animations: {
                 self.menuVC.view.frame.origin.x += self.view.frame.width
                 self.menuVC.view.layoutIfNeeded()
+                self.darkBlurView.alpha = 0.5
             }) { _ in
                 self.menuShowed = true
             }
@@ -105,6 +107,7 @@ class MainViewController: UIViewController {
             UIView.animateWithDuration(0.3, delay: 0.0, options: [.CurveEaseInOut], animations: {
                 self.menuVC.view.frame.origin.x -= self.view.frame.width
                 self.menuVC.view.layoutIfNeeded()
+                self.darkBlurView.alpha = 0.0
             }) { _ in
                 self.menuShowed = false
             }

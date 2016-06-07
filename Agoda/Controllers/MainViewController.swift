@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet var menuButton: UIImageView!
+    @IBOutlet var menuButton: UIButton!
     @IBOutlet var agodaView: Agoda!
     @IBOutlet var searchView: UIView!
     @IBOutlet var searchBar: UISearchBar!
@@ -23,6 +23,8 @@ class MainViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var greenBlurView: UIView!
     @IBOutlet var bottomView: UIView!
+
+    var menuShowed = false
 
     var menuVC: MenuViewController!
     
@@ -38,10 +40,6 @@ class MainViewController: UIViewController {
         // Create Data For CheckDateView
         createDataForCheckOutView()
         createDataForCheckInView()
-
-        // Create Gesture for Menu
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.openMenuViewController(_:)))
-        menuButton.addGestureRecognizer(tapGesture)
 
         // Add MenuViewController
         addMenuViewController()
@@ -79,8 +77,15 @@ class MainViewController: UIViewController {
 
     // MARK: Open Menu View Controller
 
-    func openMenuViewController(gesture: UITapGestureRecognizer) {
-
+    @IBAction func menuButtonTapped(sender: AnyObject) {
+        if menuShowed == false {
+            UIView.animateWithDuration(0.3, delay: 0.0, options: [.CurveEaseInOut], animations: {
+                self.menuVC.view.frame.origin.x += self.view.frame.width
+                self.menuVC.view.layoutIfNeeded()
+            }) { _ in
+                self.menuShowed = true
+            }
+        }
     }
 
     // MARK: Add MenuViewController
@@ -88,6 +93,21 @@ class MainViewController: UIViewController {
     private func addMenuViewController() {
         menuVC = storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
         addSubViewController(menuVC)
-        menuVC!.view.layoutIfNeeded()
+        menuVC.view.frame.origin.x -= view.frame.width
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.hideMenuViewController))
+        menuVC.emptyRightView.addGestureRecognizer(tapGesture)
+        menuVC.view.layoutIfNeeded()
+    }
+
+    // Hide MenuViewController
+    func hideMenuViewController() {
+        if menuShowed {
+            UIView.animateWithDuration(0.3, delay: 0.0, options: [.CurveEaseInOut], animations: {
+                self.menuVC.view.frame.origin.x -= self.view.frame.width
+                self.menuVC.view.layoutIfNeeded()
+            }) { _ in
+                self.menuShowed = false
+            }
+        }
     }
 }

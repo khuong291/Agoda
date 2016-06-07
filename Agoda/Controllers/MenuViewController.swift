@@ -10,6 +10,8 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet var emptyRightView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

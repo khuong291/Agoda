@@ -27,22 +27,14 @@
                                     <constraint firstAttribute="width" constant="100" id="vdH-Xu-wHe"/>
                                 </constraints>
                             </view>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-ug-QFq">
-                                <rect key="frame" x="20" y="20" width="20" height="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="lfj-uX-hNP"/>
-                                    <constraint firstAttribute="height" constant="20" id="q6f-EH-Fhj"/>
-                                </constraints>
-                            </imageView>
                             <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-Qd-mQQ" userLabel="DarkView">
-                                <rect key="frame" x="15" y="60" width="345" height="400"/>
+                                <rect key="frame" x="15" y="70" width="345" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrZ-Dl-Pxa" userLabel="Search View">
-                                <rect key="frame" x="15" y="60" width="345" height="400"/>
+                                <rect key="frame" x="15" y="70" width="345" height="400"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-e2-6Tz">
+                                    <searchBar contentMode="redraw" placeholder="Where do you want to go?" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-e2-6Tz">
                                         <rect key="frame" x="8" y="8" width="329" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="GDB-SB-y7m"/>
@@ -245,27 +237,38 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-64-X7K">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I7G-SZ-Fal"/>
+                                    <constraint firstAttribute="width" constant="30" id="bwg-9z-J96"/>
+                                </constraints>
+                                <state key="normal" image="menu"/>
+                                <connections>
+                                    <action selector="menuButtonTapped:" destination="MXi-ki-Vvf" eventType="touchUpInside" id="wEQ-qA-y7Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tm6-ug-QFq" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" constant="20" id="1mi-2I-hMd"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="trailing" secondItem="YrZ-Dl-Pxa" secondAttribute="trailing" id="82J-Xb-AO3"/>
                             <constraint firstAttribute="trailing" secondItem="YrZ-Dl-Pxa" secondAttribute="trailing" constant="15" id="B2c-bY-8Ub"/>
+                            <constraint firstItem="6KQ-64-X7K" firstAttribute="top" secondItem="puH-7G-yAO" secondAttribute="top" id="FSP-pZ-Efq"/>
                             <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" constant="15" id="JhG-dD-7Uc"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="leading" secondItem="KRT-vN-Eap" secondAttribute="leading" id="Lxb-9N-iTn"/>
-                            <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="top" secondItem="tm6-ug-QFq" secondAttribute="bottom" constant="20" id="MfD-6q-cs2"/>
                             <constraint firstItem="puH-7G-yAO" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" id="Q64-mC-hiU"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="leading" secondItem="YrZ-Dl-Pxa" secondAttribute="leading" id="TqI-WO-Spc"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="top" secondItem="KRT-vN-Eap" secondAttribute="top" id="VjS-UZ-WU6"/>
                             <constraint firstItem="y1Q-lm-nkZ" firstAttribute="top" secondItem="KRT-vN-Eap" secondAttribute="bottom" constant="8" id="cEW-dH-2hT"/>
                             <constraint firstAttribute="trailing" secondItem="puH-7G-yAO" secondAttribute="trailing" id="cYi-Iw-2AX"/>
                             <constraint firstAttribute="trailing" secondItem="KRT-vN-Eap" secondAttribute="trailing" constant="8" id="cwv-w8-ozs"/>
+                            <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="top" secondItem="6KQ-64-X7K" secondAttribute="bottom" constant="20" id="dN6-tC-3aj"/>
+                            <constraint firstItem="6KQ-64-X7K" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" constant="20" id="ePx-JZ-VYV"/>
                             <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" constant="40" id="gkx-Hu-Wl6"/>
                             <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="centerX" secondItem="emk-xf-s4c" secondAttribute="centerX" id="n0Q-1B-bVe"/>
                             <constraint firstItem="YrZ-Dl-Pxa" firstAttribute="centerY" secondItem="emk-xf-s4c" secondAttribute="centerY" id="npj-2q-Aej"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="bottom" secondItem="KRT-vN-Eap" secondAttribute="bottom" id="oR9-U0-iAM"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="top" secondItem="YrZ-Dl-Pxa" secondAttribute="top" id="pVr-nO-hWe"/>
-                            <constraint firstItem="tm6-ug-QFq" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" id="qXl-AF-Z8Q"/>
                             <constraint firstItem="gYV-Qd-mQQ" firstAttribute="bottom" secondItem="YrZ-Dl-Pxa" secondAttribute="bottom" id="rBb-BR-5pL"/>
                             <constraint firstItem="b5K-q8-ShC" firstAttribute="trailing" secondItem="KRT-vN-Eap" secondAttribute="trailing" id="zwV-ee-flb"/>
                         </constraints>
@@ -286,7 +289,7 @@
                         <outlet property="darkView" destination="gYV-Qd-mQQ" id="RWA-Zk-oIZ"/>
                         <outlet property="greenBlurView" destination="b5K-q8-ShC" id="BUl-ns-mA0"/>
                         <outlet property="infoView" destination="zfr-l3-5Dp" id="UYr-4X-LhO"/>
-                        <outlet property="menuButton" destination="tm6-ug-QFq" id="93K-hU-8mj"/>
+                        <outlet property="menuButton" destination="6KQ-64-X7K" id="J2q-Y8-IIG"/>
                         <outlet property="quantityView" destination="KGe-KX-KXt" id="PVS-2x-Kyr"/>
                         <outlet property="searchBar" destination="pMV-e2-6Tz" id="bGm-r5-xiU"/>
                         <outlet property="searchButton" destination="j8K-kP-MyH" id="enW-VY-ui9"/>
@@ -358,7 +361,7 @@
         <!--Menu View Controller-->
         <scene sceneID="UJo-bC-0E4">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="aM9-Jk-lbk" customClass="MenuViewController" customModule="Agoda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" automaticallyAdjustsScrollViewInsets="NO" id="aM9-Jk-lbk" customClass="MenuViewController" customModule="Agoda" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xgy-Kh-Qga"/>
                         <viewControllerLayoutGuide type="bottom" id="No2-o6-Sbk"/>
@@ -367,14 +370,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h16-Ca-gnV">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h16-Ca-gnV" userLabel="EmptyRightView">
                                 <rect key="frame" x="300" y="0.0" width="75" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqU-2N-wAG" userLabel="menu">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sip-jm-AgT">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sip-jm-AgT">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-A0-Ide" userLabel="ContentView">
@@ -461,6 +464,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emptyRightView" destination="h16-Ca-gnV" id="QoW-2o-RzS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6n-IW-8Ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

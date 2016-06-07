@@ -12,7 +12,9 @@
 		9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */; };
 		9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAEB1D05CAB5005F88BF /* Assets.xcassets */; };
 		9948AAEF1D05CAB5005F88BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAED1D05CAB5005F88BF /* LaunchScreen.storyboard */; };
-		9948AAF71D05CC6D005F88BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAF61D05CC6D005F88BF /* HomeViewController.swift */; };
+		998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B051D065EAB0013AFFD /* HomePageViewController.swift */; };
+		998A8B081D0660080013AFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B071D0660080013AFFD /* ViewController.swift */; };
+		998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B091D0661DF0013AFFD /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		9948AAEB1D05CAB5005F88BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9948AAEE1D05CAB5005F88BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9948AAF01D05CAB5005F88BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9948AAF61D05CC6D005F88BF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		998A8B051D065EAB0013AFFD /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controllers/HomePageViewController.swift; sourceTree = "<group>"; };
+		998A8B071D0660080013AFFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		998A8B091D0661DF0013AFFD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,8 @@
 		9948AAF91D05CD0E005F88BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9948AAF61D05CC6D005F88BF /* HomeViewController.swift */,
+				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
+				998A8B071D0660080013AFFD /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		9948AAFA1D05CD12005F88BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				998A8B091D0661DF0013AFFD /* Place.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			files = (
 				9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */,
 				9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */,
-				9948AAF71D05CC6D005F88BF /* HomeViewController.swift in Sources */,
+				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
+				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
+				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +322,7 @@
 				9948AAF51D05CAB5005F88BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

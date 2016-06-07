@@ -16,8 +16,6 @@ class Agoda: UIView {
     @IBOutlet var greenView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var redView: UIView!
-    @IBOutlet var agodaLabel: UILabel!
-    @IBOutlet var stackView: UIStackView!
 
     required override init(frame: CGRect) {
         super.init(frame: frame)

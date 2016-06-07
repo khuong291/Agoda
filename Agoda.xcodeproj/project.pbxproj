@@ -18,6 +18,8 @@
 		998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B0B1D0698210013AFFD /* AgodaView.xib */; };
 		998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B0D1D0699470013AFFD /* AgodaView.swift */; };
 		998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B101D0699D00013AFFD /* UIView_Extension.swift */; };
+		998A8B131D069D500013AFFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B121D069D500013AFFD /* MainViewController.swift */; };
+		998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		998A8B0B1D0698210013AFFD /* AgodaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgodaView.xib; path = Views/AgodaView.xib; sourceTree = "<group>"; };
 		998A8B0D1D0699470013AFFD /* AgodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgodaView.swift; path = Views/AgodaView.swift; sourceTree = "<group>"; };
 		998A8B101D0699D00013AFFD /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Extension.swift; path = Extensions/UIView_Extension.swift; sourceTree = "<group>"; };
+		998A8B121D069D500013AFFD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController_Extension.swift; path = Extensions/UIViewController_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			children = (
 				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
 				998A8B071D0660080013AFFD /* ViewController.swift */,
+				998A8B121D069D500013AFFD /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				998A8B101D0699D00013AFFD /* UIView_Extension.swift */,
+				998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
 				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
+				998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */,
 				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
 				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
+				998A8B131D069D500013AFFD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

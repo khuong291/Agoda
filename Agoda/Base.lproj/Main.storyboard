@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D61-Xo-fet">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MXi-ki-Vvf">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="sYj-Ix-ljc">
+            <objects>
+                <viewController id="MXi-ki-Vvf" customClass="MainViewController" customModule="Agoda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FqW-O1-QKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="y1Q-lm-nkZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="emk-xf-s4c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puH-7G-yAO" customClass="Agoda" customModule="Agoda" customModuleProvider="target">
+                                <rect key="frame" x="275" y="20" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PZq-Qe-8Mc"/>
+                                    <constraint firstAttribute="width" constant="100" id="vdH-Xu-wHe"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-ug-QFq">
+                                <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="lfj-uX-hNP"/>
+                                    <constraint firstAttribute="height" constant="20" id="q6f-EH-Fhj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tm6-ug-QFq" firstAttribute="leading" secondItem="emk-xf-s4c" secondAttribute="leading" constant="20" id="1mi-2I-hMd"/>
+                            <constraint firstItem="puH-7G-yAO" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" id="Q64-mC-hiU"/>
+                            <constraint firstAttribute="trailing" secondItem="puH-7G-yAO" secondAttribute="trailing" id="cYi-Iw-2AX"/>
+                            <constraint firstItem="tm6-ug-QFq" firstAttribute="top" secondItem="FqW-O1-QKL" secondAttribute="bottom" id="qXl-AF-Z8Q"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="agodaView" destination="puH-7G-yAO" id="x9q-kv-Sh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eio-8f-Hbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340.5" y="117.5"/>
+        </scene>
         <!--Home Page View Controller-->
         <scene sceneID="0hd-Ni-JXK">
             <objects>
@@ -29,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-Ka-imz">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-nd-uM3">
                                 <rect key="frame" x="16" y="606" width="45" height="21"/>
@@ -46,7 +92,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zz3-nd-uM3" secondAttribute="bottom" constant="40" id="VIM-DG-wFq"/>
                             <constraint firstItem="iW0-Ka-imz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fUD-dU-bgk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iW0-Ka-imz" secondAttribute="bottom" id="gJG-6W-BFb"/>
+                            <constraint firstItem="iW0-Ka-imz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="vpa-fP-MiX"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fUD-dU-bgk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -59,4 +111,7 @@
             <point key="canvasLocation" x="717.5" y="109.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu" width="170" height="170"/>
+    </resources>
 </document>

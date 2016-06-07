@@ -15,6 +15,9 @@
 		998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B051D065EAB0013AFFD /* HomePageViewController.swift */; };
 		998A8B081D0660080013AFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B071D0660080013AFFD /* ViewController.swift */; };
 		998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B091D0661DF0013AFFD /* Place.swift */; };
+		998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B0B1D0698210013AFFD /* AgodaView.xib */; };
+		998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B0D1D0699470013AFFD /* AgodaView.swift */; };
+		998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B101D0699D00013AFFD /* UIView_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		998A8B051D065EAB0013AFFD /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controllers/HomePageViewController.swift; sourceTree = "<group>"; };
 		998A8B071D0660080013AFFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		998A8B091D0661DF0013AFFD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
+		998A8B0B1D0698210013AFFD /* AgodaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgodaView.xib; path = Views/AgodaView.xib; sourceTree = "<group>"; };
+		998A8B0D1D0699470013AFFD /* AgodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgodaView.swift; path = Views/AgodaView.swift; sourceTree = "<group>"; };
+		998A8B101D0699D00013AFFD /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Extension.swift; path = Extensions/UIView_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		9948AAE01D05CAB4005F88BF /* Agoda */ = {
 			isa = PBXGroup;
 			children = (
+				998A8B0F1D0699BF0013AFFD /* Extensions */,
 				9948AAFA1D05CD12005F88BF /* Models */,
 				9948AAF91D05CD0E005F88BF /* Controllers */,
 				9948AAF81D05CD0A005F88BF /* Views */,
@@ -76,6 +83,8 @@
 		9948AAF81D05CD0A005F88BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				998A8B0B1D0698210013AFFD /* AgodaView.xib */,
+				998A8B0D1D0699470013AFFD /* AgodaView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -95,6 +104,14 @@
 				998A8B091D0661DF0013AFFD /* Place.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		998A8B0F1D0699BF0013AFFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B101D0699D00013AFFD /* UIView_Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9948AAEF1D05CAB5005F88BF /* LaunchScreen.storyboard in Resources */,
+				998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */,
 				9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */,
 				9948AAE71D05CAB5005F88BF /* Main.storyboard in Resources */,
 			);
@@ -170,7 +188,9 @@
 			files = (
 				9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */,
 				9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */,
+				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
+				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
 				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
 				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
 			);

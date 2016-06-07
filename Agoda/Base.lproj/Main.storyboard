@@ -94,8 +94,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGe-KX-KXt">
                                         <rect key="frame" x="8" y="172" width="329" height="75"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C01-4n-2b7">
-                                                <rect key="frame" x="80" y="17" width="180" height="42"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C01-4n-2b7">
+                                                <rect key="frame" x="75" y="17" width="180" height="42"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yaA-1N-9sc">
                                                         <rect key="frame" x="0.0" y="0.0" width="81" height="42"/>
@@ -123,7 +123,7 @@
                                                                 <color key="textColor" red="1" green="0.53573704870000005" blue="0.2184880484" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-yy-l5v">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-yy-l5v">
                                                                 <rect key="frame" x="26" y="17" width="53" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -154,7 +154,35 @@
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfr-l3-5Dp">
                                         <rect key="frame" x="8" y="310" width="329" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your last search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xn-QG-mSO">
+                                                <rect key="frame" x="5" y="5" width="123" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rome, Italy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiw-qT-REj">
+                                                <rect key="frame" x="5" y="34" width="76" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun 6 - Jun 7 | 2 Rooms 3 Audults 1 Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-6D-rrJ">
+                                                <rect key="frame" x="5" y="57" width="282" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="eiw-qT-REj" firstAttribute="leading" secondItem="8Xn-QG-mSO" secondAttribute="leading" id="7zA-dP-nEl"/>
+                                            <constraint firstItem="eiw-qT-REj" firstAttribute="top" secondItem="8Xn-QG-mSO" secondAttribute="bottom" constant="8" id="DmM-Y8-r8N"/>
+                                            <constraint firstItem="vIF-6D-rrJ" firstAttribute="top" secondItem="eiw-qT-REj" secondAttribute="bottom" constant="5" id="ZEi-is-06i"/>
+                                            <constraint firstItem="8Xn-QG-mSO" firstAttribute="top" secondItem="zfr-l3-5Dp" secondAttribute="top" constant="5" id="cYa-aY-Nff"/>
+                                            <constraint firstItem="8Xn-QG-mSO" firstAttribute="leading" secondItem="zfr-l3-5Dp" secondAttribute="leading" constant="5" id="ga3-aV-nZo"/>
+                                            <constraint firstItem="vIF-6D-rrJ" firstAttribute="leading" secondItem="8Xn-QG-mSO" secondAttribute="leading" id="pAG-5Q-qT6"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -207,10 +235,13 @@
                     <connections>
                         <outlet property="agodaView" destination="puH-7G-yAO" id="x9q-kv-Sh7"/>
                         <outlet property="checkDateView" destination="mLX-pG-UD8" id="wqS-3P-3nS"/>
+                        <outlet property="checkInView" destination="sPo-Ya-cKj" id="T2G-tU-CjO"/>
+                        <outlet property="checkOutView" destination="mGG-Gf-ElB" id="HlH-OE-xJO"/>
                         <outlet property="darkView" destination="gYV-Qd-mQQ" id="RWA-Zk-oIZ"/>
                         <outlet property="infoView" destination="zfr-l3-5Dp" id="UYr-4X-LhO"/>
                         <outlet property="quantityView" destination="KGe-KX-KXt" id="PVS-2x-Kyr"/>
                         <outlet property="searchBar" destination="pMV-e2-6Tz" id="bGm-r5-xiU"/>
+                        <outlet property="searchButton" destination="j8K-kP-MyH" id="enW-VY-ui9"/>
                         <outlet property="searchView" destination="YrZ-Dl-Pxa" id="3of-FQ-hPs"/>
                     </connections>
                 </viewController>

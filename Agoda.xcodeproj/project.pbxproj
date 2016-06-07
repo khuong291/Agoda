@@ -20,6 +20,8 @@
 		998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B101D0699D00013AFFD /* UIView_Extension.swift */; };
 		998A8B131D069D500013AFFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B121D069D500013AFFD /* MainViewController.swift */; };
 		998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */; };
+		998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B181D06D6FB0013AFFD /* CheckDateView.xib */; };
+		998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		998A8B101D0699D00013AFFD /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Extension.swift; path = Extensions/UIView_Extension.swift; sourceTree = "<group>"; };
 		998A8B121D069D500013AFFD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController_Extension.swift; path = Extensions/UIViewController_Extension.swift; sourceTree = "<group>"; };
+		998A8B181D06D6FB0013AFFD /* CheckDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheckDateView.xib; path = Views/CheckDateView.xib; sourceTree = "<group>"; };
+		998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckDateView.swift; path = Views/CheckDateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				998A8B0B1D0698210013AFFD /* AgodaView.xib */,
 				998A8B0D1D0699470013AFFD /* AgodaView.swift */,
+				998A8B181D06D6FB0013AFFD /* CheckDateView.xib */,
+				998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */,
 				9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */,
 				9948AAE71D05CAB5005F88BF /* Main.storyboard in Resources */,
+				998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +202,7 @@
 				9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */,
 				9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */,
 				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
+				998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
 				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
 				998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */,

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckDateView" customModule="Agoda" customModuleProvider="target">
+            <connections>
+                <outlet property="checkInLabel" destination="QWX-JS-wCS" id="9tr-Ez-ILI"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bAx-b1-C57"/>
+                <outlet property="dateLabel" destination="H9v-ZW-mnW" id="dBn-ud-0Af"/>
+                <outlet property="dayLabel" destination="z1M-dh-aLe" id="6NY-35-WZC"/>
+                <outlet property="monthLabel" destination="QFB-bd-9c5" id="uzB-3h-Nfb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check - in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWX-JS-wCS">
+                    <rect key="frame" x="0.0" y="8" width="167" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-bd-9c5">
+                    <rect key="frame" x="119" y="39" width="28" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1M-dh-aLe">
+                    <rect key="frame" x="119" y="65" width="28" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9v-ZW-mnW">
+                    <rect key="frame" x="70" y="41" width="41" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="textColor" red="1" green="0.5357370486666857" blue="0.21848804838845459" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QFB-bd-9c5" firstAttribute="leading" secondItem="H9v-ZW-mnW" secondAttribute="trailing" constant="8" id="0kR-Pe-c1O"/>
+                <constraint firstItem="H9v-ZW-mnW" firstAttribute="top" secondItem="QWX-JS-wCS" secondAttribute="bottom" constant="12" id="27P-Dg-pBU"/>
+                <constraint firstItem="z1M-dh-aLe" firstAttribute="top" secondItem="QFB-bd-9c5" secondAttribute="bottom" constant="5" id="PPu-of-dKc"/>
+                <constraint firstItem="QWX-JS-wCS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jhi-SP-ySC"/>
+                <constraint firstItem="z1M-dh-aLe" firstAttribute="leading" secondItem="QFB-bd-9c5" secondAttribute="leading" id="nUQ-iL-oqo"/>
+                <constraint firstAttribute="trailing" secondItem="QFB-bd-9c5" secondAttribute="trailing" constant="20" id="ndM-zq-CBY"/>
+                <constraint firstAttribute="trailing" secondItem="QWX-JS-wCS" secondAttribute="trailing" id="vAU-GX-dRS"/>
+                <constraint firstItem="QFB-bd-9c5" firstAttribute="top" secondItem="QWX-JS-wCS" secondAttribute="bottom" constant="10" id="vKf-Ib-DCG"/>
+                <constraint firstItem="QWX-JS-wCS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vVU-Kk-yjK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="208.5" y="214"/>
+        </view>
+    </objects>
+</document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9936A9C01D07F9C700AE4E6C /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */; };
 		9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9C11D0802C600AE4E6C /* MenuItem.swift */; };
+		9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9C31D080A0300AE4E6C /* MainViewController.swift */; };
 		9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE11D05CAB4005F88BF /* AppDelegate.swift */; };
 		9948AAE71D05CAB5005F88BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAE51D05CAB5005F88BF /* Main.storyboard */; };
 		9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */; };
@@ -20,7 +21,7 @@
 		998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B0B1D0698210013AFFD /* AgodaView.xib */; };
 		998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B0D1D0699470013AFFD /* AgodaView.swift */; };
 		998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B101D0699D00013AFFD /* UIView_Extension.swift */; };
-		998A8B131D069D500013AFFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B121D069D500013AFFD /* MainViewController.swift */; };
+		998A8B131D069D500013AFFD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B121D069D500013AFFD /* SearchViewController.swift */; };
 		998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */; };
 		998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B181D06D6FB0013AFFD /* CheckDateView.xib */; };
 		998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemTableViewCell.swift; path = Views/MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		9936A9C11D0802C600AE4E6C /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Models/MenuItem.swift; sourceTree = "<group>"; };
+		9936A9C31D080A0300AE4E6C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		9948AADE1D05CAB4005F88BF /* Agoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9948AAE11D05CAB4005F88BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9948AAE61D05CAB5005F88BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +45,7 @@
 		998A8B0B1D0698210013AFFD /* AgodaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgodaView.xib; path = Views/AgodaView.xib; sourceTree = "<group>"; };
 		998A8B0D1D0699470013AFFD /* AgodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgodaView.swift; path = Views/AgodaView.swift; sourceTree = "<group>"; };
 		998A8B101D0699D00013AFFD /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Extension.swift; path = Extensions/UIView_Extension.swift; sourceTree = "<group>"; };
-		998A8B121D069D500013AFFD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		998A8B121D069D500013AFFD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
 		998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController_Extension.swift; path = Extensions/UIViewController_Extension.swift; sourceTree = "<group>"; };
 		998A8B181D06D6FB0013AFFD /* CheckDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheckDateView.xib; path = Views/CheckDateView.xib; sourceTree = "<group>"; };
 		998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckDateView.swift; path = Views/CheckDateView.swift; sourceTree = "<group>"; };
@@ -111,8 +113,9 @@
 			children = (
 				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
 				998A8B071D0660080013AFFD /* ViewController.swift */,
-				998A8B121D069D500013AFFD /* MainViewController.swift */,
+				998A8B121D069D500013AFFD /* SearchViewController.swift */,
 				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
+				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -215,12 +218,13 @@
 				998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
 				9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */,
+				9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */,
 				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
 				998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */,
 				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
 				9936A9C01D07F9C700AE4E6C /* MenuItemTableViewCell.swift in Sources */,
 				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
-				998A8B131D069D500013AFFD /* MainViewController.swift in Sources */,
+				998A8B131D069D500013AFFD /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

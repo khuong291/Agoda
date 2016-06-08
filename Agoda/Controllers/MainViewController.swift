@@ -10,6 +10,12 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet var stackView: UIStackView!
+    @IBOutlet var rightLabel: UILabel!
+    @IBOutlet var leftLabel: UILabel!
+    @IBOutlet var lineView: UIView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var topView: UIView!
     @IBOutlet var darkBlurView: UIView!
     @IBOutlet var menuButton: UIButton!
 
@@ -19,6 +25,9 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        topView.hidden = true
+        stackView.hidden = true
 
         // Add MenuViewController
         addMenuViewController()

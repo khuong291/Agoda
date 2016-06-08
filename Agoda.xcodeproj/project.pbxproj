@@ -63,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9936A9C51D080E0300AE4E6C /* AgodaView */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B0B1D0698210013AFFD /* AgodaView.xib */,
+				998A8B0D1D0699470013AFFD /* AgodaView.swift */,
+			);
+			name = AgodaView;
+			sourceTree = "<group>";
+		};
+		9936A9C61D080E0E00AE4E6C /* CheckDateView */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B181D06D6FB0013AFFD /* CheckDateView.xib */,
+				998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */,
+			);
+			name = CheckDateView;
+			sourceTree = "<group>";
+		};
 		9948AAD51D05CAB4005F88BF = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +117,8 @@
 		9948AAF81D05CD0A005F88BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				998A8B0B1D0698210013AFFD /* AgodaView.xib */,
-				998A8B0D1D0699470013AFFD /* AgodaView.swift */,
-				998A8B181D06D6FB0013AFFD /* CheckDateView.xib */,
-				998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */,
+				9936A9C61D080E0E00AE4E6C /* CheckDateView */,
+				9936A9C51D080E0300AE4E6C /* AgodaView */,
 				9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */,
 			);
 			name = Views;

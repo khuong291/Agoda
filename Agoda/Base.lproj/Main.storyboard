@@ -207,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-MG-6q5" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="120"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ud-8r-r7q" userLabel="TitleView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -299,7 +299,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="g0B-SO-UrI">
-                                <rect key="frame" x="0.0" y="120" width="375" height="3"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="3"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUS-Df-WQ4" userLabel="RedView">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="3"/>
@@ -366,7 +366,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pw0-e3-CK4" userLabel="IntroView">
-                                <rect key="frame" x="0.0" y="123" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="150"/>
                                 <subviews>
                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-GI-TQc">
                                         <rect key="frame" x="8" y="8" width="359" height="134"/>
@@ -435,7 +435,7 @@
                                 </variation>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="186" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f0i-HM-Fzw">
-                                <rect key="frame" x="0.0" y="273" width="375" height="394"/>
+                                <rect key="frame" x="0.0" y="293" width="375" height="374"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" rowHeight="186" id="iRV-DJ-WPN" customClass="ResultTableViewCell" customModule="Agoda" customModuleProvider="target">
@@ -460,12 +460,35 @@
                                                                     <color key="textColor" red="0.15269365469999999" green="0.54870891489999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Fz-o7d" userLabel="RateView">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Fz-o7d" userLabel="RateView" customClass="CosmosView" customModule="Cosmos">
                                                                     <rect key="frame" x="8" y="44" width="217" height="20"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="syH-D1-0C4"/>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                            <real key="value" value="4.5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                                            <real key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                                            <color key="value" red="1" green="0.53573704870000005" blue="0.2184880484" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                                            <color key="value" red="1" green="0.53573704870000005" blue="0.2184880484" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                                            <color key="value" red="1" green="0.53573704870000005" blue="0.2184880484" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                                            <integer key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exceptional 9.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2J-Mr-J5z">
                                                                     <rect key="frame" x="8" y="66" width="102" height="18"/>
@@ -614,9 +637,11 @@
                             <constraint firstItem="g0B-SO-UrI" firstAttribute="trailing" secondItem="oaW-MG-6q5" secondAttribute="trailing" id="bSk-jR-33l"/>
                             <constraint firstAttribute="topMargin" secondItem="oaW-MG-6q5" secondAttribute="top" id="elF-0g-L51"/>
                             <constraint firstItem="g0B-SO-UrI" firstAttribute="leading" secondItem="oaW-MG-6q5" secondAttribute="leading" id="h6t-yN-nRX"/>
+                            <constraint firstItem="oaW-MG-6q5" firstAttribute="top" secondItem="Jcr-V6-bA2" secondAttribute="bottom" id="wly-Aw-8CK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="elF-0g-L51"/>
                                 <exclude reference="Ga3-5D-Beu"/>
                             </mask>
                         </variation>
@@ -637,6 +662,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1B-9p-By2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-333.5" y="-636.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ayy-cw-S4t">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Kkk-Q7-UWX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GJ3-dv-41f"/>
+                        <viewControllerLayoutGuide type="bottom" id="lXe-9j-ulv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nKH-56-kzH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-Jq-nGw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" id="he2-Q8-QvB" customClass="ResultTableViewCell" customModule="Agoda" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="he2-Q8-QvB" id="egK-rm-exu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kkk-Q7-UWX" id="RlQ-2b-wfe"/>
+                                    <outlet property="delegate" destination="Kkk-Q7-UWX" id="8Bs-ca-rPO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lXe-9j-ulv" firstAttribute="top" secondItem="jbP-Jq-nGw" secondAttribute="bottom" id="HGb-RU-cMt"/>
+                            <constraint firstAttribute="trailing" secondItem="jbP-Jq-nGw" secondAttribute="trailing" id="Ppb-Jc-y0w"/>
+                            <constraint firstItem="jbP-Jq-nGw" firstAttribute="leading" secondItem="nKH-56-kzH" secondAttribute="leading" id="XE8-pp-0G0"/>
+                            <constraint firstItem="jbP-Jq-nGw" firstAttribute="top" secondItem="GJ3-dv-41f" secondAttribute="bottom" id="XW5-YD-JlZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzT-k3-qCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.5" y="-636.5"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="sYj-Ix-ljc">

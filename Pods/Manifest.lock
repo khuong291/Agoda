@@ -1,0 +1,10 @@
+PODS:
+  - Cosmos (1.2.3)
+
+DEPENDENCIES:
+  - Cosmos (~> 1.2)
+
+SPEC CHECKSUMS:
+  Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
+
+COCOAPODS: 0.39.0

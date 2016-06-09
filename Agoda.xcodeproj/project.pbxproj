@@ -20,6 +20,7 @@
 		995B0A2A1D09AC5E00F8432F /* TabItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995B0A291D09AC5E00F8432F /* TabItemView.xib */; };
 		995B0A2C1D09C9C500F8432F /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */; };
 		995B0A2E1D09D2C600F8432F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */; };
+		995B0A311D09D84100F8432F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A301D09D84100F8432F /* LoginViewController.swift */; };
 		998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B051D065EAB0013AFFD /* HomePageViewController.swift */; };
 		998A8B081D0660080013AFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B071D0660080013AFFD /* ViewController.swift */; };
 		998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B091D0661DF0013AFFD /* Place.swift */; };
@@ -53,6 +54,7 @@
 		995B0A291D09AC5E00F8432F /* TabItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabItemView.xib; path = Views/TabItemView.xib; sourceTree = "<group>"; };
 		995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTableViewCell.swift; path = Views/ResultTableViewCell.swift; sourceTree = "<group>"; };
 		995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesViewController.swift; path = Controllers/FavoritesViewController.swift; sourceTree = "<group>"; };
+		995B0A301D09D84100F8432F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		998A8B051D065EAB0013AFFD /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controllers/HomePageViewController.swift; sourceTree = "<group>"; };
 		998A8B071D0660080013AFFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		998A8B091D0661DF0013AFFD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
@@ -145,13 +147,10 @@
 		9948AAF91D05CD0E005F88BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
-				998A8B071D0660080013AFFD /* ViewController.swift */,
-				998A8B121D069D500013AFFD /* SearchViewController.swift */,
+				995B0A331D09D88A00F8432F /* PageViewController */,
+				995B0A321D09D87300F8432F /* MenuItemViewController */,
 				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
 				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
-				995B0A241D09A73200F8432F /* ResultViewController.swift */,
-				995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +180,34 @@
 				995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */,
 			);
 			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		995B0A321D09D87300F8432F /* MenuItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				995B0A341D09D8AA00F8432F /* Search */,
+				995B0A301D09D84100F8432F /* LoginViewController.swift */,
+				995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */,
+			);
+			name = MenuItemViewController;
+			sourceTree = "<group>";
+		};
+		995B0A331D09D88A00F8432F /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
+				998A8B071D0660080013AFFD /* ViewController.swift */,
+			);
+			name = PageViewController;
+			sourceTree = "<group>";
+		};
+		995B0A341D09D8AA00F8432F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				995B0A241D09A73200F8432F /* ResultViewController.swift */,
+				998A8B121D069D500013AFFD /* SearchViewController.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 		998A8B0F1D0699BF0013AFFD /* Extensions */ = {
@@ -338,6 +365,7 @@
 				9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */,
 				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
 				998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */,
+				995B0A311D09D84100F8432F /* LoginViewController.swift in Sources */,
 				998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */,
 				995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,

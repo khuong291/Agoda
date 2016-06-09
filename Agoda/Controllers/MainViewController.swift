@@ -133,6 +133,11 @@ class MainViewController: UIViewController, MenuViewControllerDelegate, SearchVi
                 self.titleLabel.text = title
                 self.menuButton.setImage(UIImage(named: "blackmenu"), forState: .Normal)
             }
+
+            childViewControllers.last?.removeFromSuperViewController()
+            // Add LoginVC
+            let loginVC = storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController
+            addSubViewController(loginVC, index: 0)
         }
     }
 

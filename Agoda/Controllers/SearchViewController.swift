@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SearchViewControllerDelegate: NSObjectProtocol {
+    func searchButtonDidTapped()
+}
+
 class SearchViewController: UIViewController {
 
     @IBOutlet var agodaView: Agoda!
@@ -22,6 +26,8 @@ class SearchViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var greenBlurView: UIView!
     @IBOutlet var bottomView: UIView!
+
+    weak var delegate: SearchViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,5 +71,10 @@ class SearchViewController: UIViewController {
         checkOutView.dateLabel.text = "07"
         checkOutView.dayLabel.text = "tue"
         checkOutView.monthLabel.text = "Jun"
+    }
+
+    // MARK: Search button action
+    @IBAction func searchButtonTapped(sender: UIButton) {
+        delegate?.searchButtonDidTapped()
     }
 }

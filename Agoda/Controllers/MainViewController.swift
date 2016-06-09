@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, MenuViewControllerDelegate {
+class MainViewController: UIViewController, MenuViewControllerDelegate, SearchViewControllerDelegate {
     
     @IBOutlet var stackView: UIStackView!
     @IBOutlet var rightLabel: UILabel!
@@ -37,6 +37,7 @@ class MainViewController: UIViewController, MenuViewControllerDelegate {
 
         // Add searchVC
         let searchVC = storyboard?.instantiateViewControllerWithIdentifier("SearchViewController") as! SearchViewController
+        searchVC.delegate = self
         addSubViewController(searchVC, index: 0)
     }
 
@@ -123,6 +124,11 @@ class MainViewController: UIViewController, MenuViewControllerDelegate {
                 self.menuButton.setImage(UIImage(named: "blackmenu"), forState: .Normal)
             }
         }
+    }
 
+    // MARK: SearchViewControllerDelegate
+    func searchButtonDidTapped() {
+        let resultVC = storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        presentViewController(resultVC, animated: true, completion: nil)
     }
 }

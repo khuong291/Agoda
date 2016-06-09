@@ -1,1251 +1,516 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0E8D6BC44BB68C8C7EFE2DDA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Agoda.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Agoda/Pods-Agoda.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E456BF94149D58ABA67BC95</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Agoda/Pods-Agoda-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3E9724A429914B1E3FFFD675</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Agoda.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>600471FA49A8532F18F5900F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Agoda.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Agoda/Pods-Agoda.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76E474496C0673F75B93DAC1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9936A9BF1D07F9C700AE4E6C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MenuItemTableViewCell.swift</string>
-			<key>path</key>
-			<string>Views/MenuItemTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9936A9C01D07F9C700AE4E6C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9936A9BF1D07F9C700AE4E6C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9936A9C11D0802C600AE4E6C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MenuItem.swift</string>
-			<key>path</key>
-			<string>Models/MenuItem.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9936A9C21D0802C600AE4E6C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9936A9C11D0802C600AE4E6C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9936A9C31D080A0300AE4E6C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MainViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/MainViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9936A9C41D080A0300AE4E6C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9936A9C31D080A0300AE4E6C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9936A9C51D080E0300AE4E6C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B0B1D0698210013AFFD</string>
-				<string>998A8B0D1D0699470013AFFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AgodaView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9936A9C61D080E0E00AE4E6C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B181D06D6FB0013AFFD</string>
-				<string>998A8B1A1D06D70A0013AFFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CheckDateView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAD51D05CAB4005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9948AAE01D05CAB4005F88BF</string>
-				<string>9948AADF1D05CAB4005F88BF</string>
-				<string>D3EE62278B16EBBC6AA4BBCF</string>
-				<string>EF28D38D7217B91D95E80EB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAD61D05CAB4005F88BF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Fantageek</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>9948AADD1D05CAB4005F88BF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9948AAD91D05CAB4005F88BF</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>9948AAD51D05CAB4005F88BF</string>
-			<key>productRefGroup</key>
-			<string>9948AADF1D05CAB4005F88BF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>9948AADD1D05CAB4005F88BF</string>
-			</array>
-		</dict>
-		<key>9948AAD91D05CAB4005F88BF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9948AAF11D05CAB5005F88BF</string>
-				<string>9948AAF21D05CAB5005F88BF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9948AADA1D05CAB4005F88BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9948AAEA1D05CAB5005F88BF</string>
-				<string>9948AAE21D05CAB4005F88BF</string>
-				<string>998A8B111D0699D00013AFFD</string>
-				<string>998A8B1B1D06D70A0013AFFD</string>
-				<string>998A8B1D1D0721E10013AFFD</string>
-				<string>995B0A251D09A73200F8432F</string>
-				<string>998A8B081D0660080013AFFD</string>
-				<string>9936A9C21D0802C600AE4E6C</string>
-				<string>9936A9C41D080A0300AE4E6C</string>
-				<string>998A8B0E1D0699470013AFFD</string>
-				<string>998A8B151D069DC40013AFFD</string>
-				<string>998A8B061D065EAB0013AFFD</string>
-				<string>995B0A2C1D09C9C500F8432F</string>
-				<string>9936A9C01D07F9C700AE4E6C</string>
-				<string>995B0A271D09AC3D00F8432F</string>
-				<string>998A8B0A1D0661DF0013AFFD</string>
-				<string>998A8B131D069D500013AFFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9948AADB1D05CAB4005F88BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B844A5FF523DAFFCFA68ACE3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9948AADC1D05CAB4005F88BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9948AAEF1D05CAB5005F88BF</string>
-				<string>998A8B0C1D0698210013AFFD</string>
-				<string>9948AAEC1D05CAB5005F88BF</string>
-				<string>9948AAE71D05CAB5005F88BF</string>
-				<string>995B0A2A1D09AC5E00F8432F</string>
-				<string>998A8B191D06D6FB0013AFFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9948AADD1D05CAB4005F88BF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9948AAF31D05CAB5005F88BF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>76E474496C0673F75B93DAC1</string>
-				<string>9948AADA1D05CAB4005F88BF</string>
-				<string>9948AADB1D05CAB4005F88BF</string>
-				<string>9948AADC1D05CAB4005F88BF</string>
-				<string>EB5322346093182819C2C0AC</string>
-				<string>2E456BF94149D58ABA67BC95</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Agoda</string>
-			<key>productName</key>
-			<string>Agoda</string>
-			<key>productReference</key>
-			<string>9948AADE1D05CAB4005F88BF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>9948AADE1D05CAB4005F88BF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Agoda.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9948AADF1D05CAB4005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9948AADE1D05CAB4005F88BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAE01D05CAB4005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B0F1D0699BF0013AFFD</string>
-				<string>9948AAFA1D05CD12005F88BF</string>
-				<string>9948AAF91D05CD0E005F88BF</string>
-				<string>9948AAF81D05CD0A005F88BF</string>
-				<string>9948AAE11D05CAB4005F88BF</string>
-				<string>9948AAE51D05CAB5005F88BF</string>
-				<string>9948AAEB1D05CAB5005F88BF</string>
-				<string>9948AAED1D05CAB5005F88BF</string>
-				<string>9948AAF01D05CAB5005F88BF</string>
-				<string>9948AAE81D05CAB5005F88BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Agoda</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAE11D05CAB4005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAE21D05CAB4005F88BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9948AAE11D05CAB4005F88BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9948AAE51D05CAB5005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9948AAE61D05CAB5005F88BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAE61D05CAB5005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAE71D05CAB5005F88BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9948AAE51D05CAB5005F88BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9948AAE81D05CAB5005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9948AAE91D05CAB5005F88BF</string>
-			</array>
-			<key>currentVersion</key>
-			<string>9948AAE91D05CAB5005F88BF</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>Agoda.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>9948AAE91D05CAB5005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>Agoda.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAEA1D05CAB5005F88BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9948AAE81D05CAB5005F88BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9948AAEB1D05CAB5005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAEC1D05CAB5005F88BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9948AAEB1D05CAB5005F88BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9948AAED1D05CAB5005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9948AAEE1D05CAB5005F88BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAEE1D05CAB5005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAEF1D05CAB5005F88BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9948AAED1D05CAB5005F88BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9948AAF01D05CAB5005F88BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAF11D05CAB5005F88BF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9948AAF21D05CAB5005F88BF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9948AAF31D05CAB5005F88BF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9948AAF41D05CAB5005F88BF</string>
-				<string>9948AAF51D05CAB5005F88BF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9948AAF41D05CAB5005F88BF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>600471FA49A8532F18F5900F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Agoda/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.fantageek.Agoda</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9948AAF51D05CAB5005F88BF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0E8D6BC44BB68C8C7EFE2DDA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Agoda/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.fantageek.Agoda</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9948AAF81D05CD0A005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>995B0A281D09AC4200F8432F</string>
-				<string>9936A9C61D080E0E00AE4E6C</string>
-				<string>9936A9C51D080E0300AE4E6C</string>
-				<string>9936A9BF1D07F9C700AE4E6C</string>
-				<string>995B0A2B1D09C9C500F8432F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAF91D05CD0E005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B051D065EAB0013AFFD</string>
-				<string>998A8B071D0660080013AFFD</string>
-				<string>998A8B121D069D500013AFFD</string>
-				<string>998A8B1C1D0721E10013AFFD</string>
-				<string>9936A9C31D080A0300AE4E6C</string>
-				<string>995B0A241D09A73200F8432F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9948AAFA1D05CD12005F88BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B091D0661DF0013AFFD</string>
-				<string>9936A9C11D0802C600AE4E6C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A241D09A73200F8432F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ResultViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/ResultViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A251D09A73200F8432F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>995B0A241D09A73200F8432F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>995B0A261D09AC3D00F8432F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>TabItemView.swift</string>
-			<key>path</key>
-			<string>Views/TabItemView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A271D09AC3D00F8432F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>995B0A261D09AC3D00F8432F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>995B0A281D09AC4200F8432F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>995B0A261D09AC3D00F8432F</string>
-				<string>995B0A291D09AC5E00F8432F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TabItemView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A291D09AC5E00F8432F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>TabItemView.xib</string>
-			<key>path</key>
-			<string>Views/TabItemView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A2A1D09AC5E00F8432F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>995B0A291D09AC5E00F8432F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>995B0A2B1D09C9C500F8432F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ResultTableViewCell.swift</string>
-			<key>path</key>
-			<string>Views/ResultTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>995B0A2C1D09C9C500F8432F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>995B0A2B1D09C9C500F8432F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B051D065EAB0013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HomePageViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/HomePageViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B061D065EAB0013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B051D065EAB0013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B071D0660080013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B081D0660080013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B071D0660080013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B091D0661DF0013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Place.swift</string>
-			<key>path</key>
-			<string>Models/Place.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B0A1D0661DF0013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B091D0661DF0013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B0B1D0698210013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>AgodaView.xib</string>
-			<key>path</key>
-			<string>Views/AgodaView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B0C1D0698210013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B0B1D0698210013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B0D1D0699470013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AgodaView.swift</string>
-			<key>path</key>
-			<string>Views/AgodaView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B0E1D0699470013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B0D1D0699470013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B0F1D0699BF0013AFFD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>998A8B101D0699D00013AFFD</string>
-				<string>998A8B141D069DC40013AFFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Extensions</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B101D0699D00013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UIView_Extension.swift</string>
-			<key>path</key>
-			<string>Extensions/UIView_Extension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B111D0699D00013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B101D0699D00013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B121D069D500013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SearchViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/SearchViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B131D069D500013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B121D069D500013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B141D069DC40013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UIViewController_Extension.swift</string>
-			<key>path</key>
-			<string>Extensions/UIViewController_Extension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B151D069DC40013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B141D069DC40013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B181D06D6FB0013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>CheckDateView.xib</string>
-			<key>path</key>
-			<string>Views/CheckDateView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B191D06D6FB0013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B181D06D6FB0013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B1A1D06D70A0013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CheckDateView.swift</string>
-			<key>path</key>
-			<string>Views/CheckDateView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B1B1D06D70A0013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B1A1D06D70A0013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>998A8B1C1D0721E10013AFFD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MenuViewController.swift</string>
-			<key>path</key>
-			<string>Controllers/MenuViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>998A8B1D1D0721E10013AFFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>998A8B1C1D0721E10013AFFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B844A5FF523DAFFCFA68ACE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E9724A429914B1E3FFFD675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D3EE62278B16EBBC6AA4BBCF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>600471FA49A8532F18F5900F</string>
-				<string>0E8D6BC44BB68C8C7EFE2DDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB5322346093182819C2C0AC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Agoda/Pods-Agoda-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EF28D38D7217B91D95E80EB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E9724A429914B1E3FFFD675</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>9948AAD61D05CAB4005F88BF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9936A9C01D07F9C700AE4E6C /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */; };
+		9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9C11D0802C600AE4E6C /* MenuItem.swift */; };
+		9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936A9C31D080A0300AE4E6C /* MainViewController.swift */; };
+		9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE11D05CAB4005F88BF /* AppDelegate.swift */; };
+		9948AAE71D05CAB5005F88BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAE51D05CAB5005F88BF /* Main.storyboard */; };
+		9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */; };
+		9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAEB1D05CAB5005F88BF /* Assets.xcassets */; };
+		9948AAEF1D05CAB5005F88BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAED1D05CAB5005F88BF /* LaunchScreen.storyboard */; };
+		995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A241D09A73200F8432F /* ResultViewController.swift */; };
+		995B0A271D09AC3D00F8432F /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A261D09AC3D00F8432F /* TabItemView.swift */; };
+		995B0A2A1D09AC5E00F8432F /* TabItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995B0A291D09AC5E00F8432F /* TabItemView.xib */; };
+		995B0A2C1D09C9C500F8432F /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */; };
+		995B0A2E1D09D2C600F8432F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */; };
+		998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B051D065EAB0013AFFD /* HomePageViewController.swift */; };
+		998A8B081D0660080013AFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B071D0660080013AFFD /* ViewController.swift */; };
+		998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B091D0661DF0013AFFD /* Place.swift */; };
+		998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B0B1D0698210013AFFD /* AgodaView.xib */; };
+		998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B0D1D0699470013AFFD /* AgodaView.swift */; };
+		998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B101D0699D00013AFFD /* UIView_Extension.swift */; };
+		998A8B131D069D500013AFFD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B121D069D500013AFFD /* SearchViewController.swift */; };
+		998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */; };
+		998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B181D06D6FB0013AFFD /* CheckDateView.xib */; };
+		998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */; };
+		998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1C1D0721E10013AFFD /* MenuViewController.swift */; };
+		B844A5FF523DAFFCFA68ACE3 /* Pods_Agoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9724A429914B1E3FFFD675 /* Pods_Agoda.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E8D6BC44BB68C8C7EFE2DDA /* Pods-Agoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Agoda/Pods-Agoda.release.xcconfig"; sourceTree = "<group>"; };
+		3E9724A429914B1E3FFFD675 /* Pods_Agoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600471FA49A8532F18F5900F /* Pods-Agoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Agoda/Pods-Agoda.debug.xcconfig"; sourceTree = "<group>"; };
+		9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemTableViewCell.swift; path = Views/MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		9936A9C11D0802C600AE4E6C /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Models/MenuItem.swift; sourceTree = "<group>"; };
+		9936A9C31D080A0300AE4E6C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		9948AADE1D05CAB4005F88BF /* Agoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9948AAE11D05CAB4005F88BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9948AAE61D05CAB5005F88BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9948AAE91D05CAB5005F88BF /* Agoda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agoda.xcdatamodel; sourceTree = "<group>"; };
+		9948AAEB1D05CAB5005F88BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9948AAEE1D05CAB5005F88BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9948AAF01D05CAB5005F88BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995B0A241D09A73200F8432F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Controllers/ResultViewController.swift; sourceTree = "<group>"; };
+		995B0A261D09AC3D00F8432F /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabItemView.swift; path = Views/TabItemView.swift; sourceTree = "<group>"; };
+		995B0A291D09AC5E00F8432F /* TabItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabItemView.xib; path = Views/TabItemView.xib; sourceTree = "<group>"; };
+		995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTableViewCell.swift; path = Views/ResultTableViewCell.swift; sourceTree = "<group>"; };
+		995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesViewController.swift; path = Controllers/FavoritesViewController.swift; sourceTree = "<group>"; };
+		998A8B051D065EAB0013AFFD /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controllers/HomePageViewController.swift; sourceTree = "<group>"; };
+		998A8B071D0660080013AFFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		998A8B091D0661DF0013AFFD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
+		998A8B0B1D0698210013AFFD /* AgodaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgodaView.xib; path = Views/AgodaView.xib; sourceTree = "<group>"; };
+		998A8B0D1D0699470013AFFD /* AgodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgodaView.swift; path = Views/AgodaView.swift; sourceTree = "<group>"; };
+		998A8B101D0699D00013AFFD /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Extension.swift; path = Extensions/UIView_Extension.swift; sourceTree = "<group>"; };
+		998A8B121D069D500013AFFD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
+		998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController_Extension.swift; path = Extensions/UIViewController_Extension.swift; sourceTree = "<group>"; };
+		998A8B181D06D6FB0013AFFD /* CheckDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheckDateView.xib; path = Views/CheckDateView.xib; sourceTree = "<group>"; };
+		998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckDateView.swift; path = Views/CheckDateView.swift; sourceTree = "<group>"; };
+		998A8B1C1D0721E10013AFFD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9948AADB1D05CAB4005F88BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B844A5FF523DAFFCFA68ACE3 /* Pods_Agoda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9936A9C51D080E0300AE4E6C /* AgodaView */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B0B1D0698210013AFFD /* AgodaView.xib */,
+				998A8B0D1D0699470013AFFD /* AgodaView.swift */,
+			);
+			name = AgodaView;
+			sourceTree = "<group>";
+		};
+		9936A9C61D080E0E00AE4E6C /* CheckDateView */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B181D06D6FB0013AFFD /* CheckDateView.xib */,
+				998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */,
+			);
+			name = CheckDateView;
+			sourceTree = "<group>";
+		};
+		9948AAD51D05CAB4005F88BF = {
+			isa = PBXGroup;
+			children = (
+				9948AAE01D05CAB4005F88BF /* Agoda */,
+				9948AADF1D05CAB4005F88BF /* Products */,
+				D3EE62278B16EBBC6AA4BBCF /* Pods */,
+				EF28D38D7217B91D95E80EB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9948AADF1D05CAB4005F88BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9948AADE1D05CAB4005F88BF /* Agoda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9948AAE01D05CAB4005F88BF /* Agoda */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B0F1D0699BF0013AFFD /* Extensions */,
+				9948AAFA1D05CD12005F88BF /* Models */,
+				9948AAF91D05CD0E005F88BF /* Controllers */,
+				9948AAF81D05CD0A005F88BF /* Views */,
+				9948AAE11D05CAB4005F88BF /* AppDelegate.swift */,
+				9948AAE51D05CAB5005F88BF /* Main.storyboard */,
+				9948AAEB1D05CAB5005F88BF /* Assets.xcassets */,
+				9948AAED1D05CAB5005F88BF /* LaunchScreen.storyboard */,
+				9948AAF01D05CAB5005F88BF /* Info.plist */,
+				9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */,
+			);
+			path = Agoda;
+			sourceTree = "<group>";
+		};
+		9948AAF81D05CD0A005F88BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				995B0A281D09AC4200F8432F /* TabItemView */,
+				9936A9C61D080E0E00AE4E6C /* CheckDateView */,
+				9936A9C51D080E0300AE4E6C /* AgodaView */,
+				9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */,
+				995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9948AAF91D05CD0E005F88BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B051D065EAB0013AFFD /* HomePageViewController.swift */,
+				998A8B071D0660080013AFFD /* ViewController.swift */,
+				998A8B121D069D500013AFFD /* SearchViewController.swift */,
+				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
+				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
+				995B0A241D09A73200F8432F /* ResultViewController.swift */,
+				995B0A2D1D09D2C600F8432F /* FavoritesViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9948AAFA1D05CD12005F88BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B091D0661DF0013AFFD /* Place.swift */,
+				9936A9C11D0802C600AE4E6C /* MenuItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		995B0A281D09AC4200F8432F /* TabItemView */ = {
+			isa = PBXGroup;
+			children = (
+				995B0A261D09AC3D00F8432F /* TabItemView.swift */,
+				995B0A291D09AC5E00F8432F /* TabItemView.xib */,
+			);
+			name = TabItemView;
+			sourceTree = "<group>";
+		};
+		998A8B0F1D0699BF0013AFFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				998A8B101D0699D00013AFFD /* UIView_Extension.swift */,
+				998A8B141D069DC40013AFFD /* UIViewController_Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D3EE62278B16EBBC6AA4BBCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				600471FA49A8532F18F5900F /* Pods-Agoda.debug.xcconfig */,
+				0E8D6BC44BB68C8C7EFE2DDA /* Pods-Agoda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF28D38D7217B91D95E80EB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E9724A429914B1E3FFFD675 /* Pods_Agoda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9948AADD1D05CAB4005F88BF /* Agoda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9948AAF31D05CAB5005F88BF /* Build configuration list for PBXNativeTarget "Agoda" */;
+			buildPhases = (
+				76E474496C0673F75B93DAC1 /* Check Pods Manifest.lock */,
+				9948AADA1D05CAB4005F88BF /* Sources */,
+				9948AADB1D05CAB4005F88BF /* Frameworks */,
+				9948AADC1D05CAB4005F88BF /* Resources */,
+				EB5322346093182819C2C0AC /* Embed Pods Frameworks */,
+				2E456BF94149D58ABA67BC95 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Agoda;
+			productName = Agoda;
+			productReference = 9948AADE1D05CAB4005F88BF /* Agoda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9948AAD61D05CAB4005F88BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Fantageek;
+				TargetAttributes = {
+					9948AADD1D05CAB4005F88BF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 9948AAD91D05CAB4005F88BF /* Build configuration list for PBXProject "Agoda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9948AAD51D05CAB4005F88BF;
+			productRefGroup = 9948AADF1D05CAB4005F88BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9948AADD1D05CAB4005F88BF /* Agoda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9948AADC1D05CAB4005F88BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948AAEF1D05CAB5005F88BF /* LaunchScreen.storyboard in Resources */,
+				998A8B0C1D0698210013AFFD /* AgodaView.xib in Resources */,
+				9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */,
+				9948AAE71D05CAB5005F88BF /* Main.storyboard in Resources */,
+				995B0A2A1D09AC5E00F8432F /* TabItemView.xib in Resources */,
+				998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E456BF94149D58ABA67BC95 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agoda/Pods-Agoda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E474496C0673F75B93DAC1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5322346093182819C2C0AC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agoda/Pods-Agoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9948AADA1D05CAB4005F88BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */,
+				9948AAE21D05CAB4005F88BF /* AppDelegate.swift in Sources */,
+				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
+				998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */,
+				998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */,
+				995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */,
+				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
+				9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */,
+				9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */,
+				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
+				995B0A2E1D09D2C600F8432F /* FavoritesViewController.swift in Sources */,
+				998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */,
+				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
+				995B0A2C1D09C9C500F8432F /* ResultTableViewCell.swift in Sources */,
+				9936A9C01D07F9C700AE4E6C /* MenuItemTableViewCell.swift in Sources */,
+				995B0A271D09AC3D00F8432F /* TabItemView.swift in Sources */,
+				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
+				998A8B131D069D500013AFFD /* SearchViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9948AAE51D05CAB5005F88BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9948AAE61D05CAB5005F88BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9948AAED1D05CAB5005F88BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9948AAEE1D05CAB5005F88BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9948AAF11D05CAB5005F88BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9948AAF21D05CAB5005F88BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9948AAF41D05CAB5005F88BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600471FA49A8532F18F5900F /* Pods-Agoda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Agoda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.Agoda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9948AAF51D05CAB5005F88BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8D6BC44BB68C8C7EFE2DDA /* Pods-Agoda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Agoda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.Agoda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9948AAD91D05CAB4005F88BF /* Build configuration list for PBXProject "Agoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948AAF11D05CAB5005F88BF /* Debug */,
+				9948AAF21D05CAB5005F88BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9948AAF31D05CAB5005F88BF /* Build configuration list for PBXNativeTarget "Agoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948AAF41D05CAB5005F88BF /* Debug */,
+				9948AAF51D05CAB5005F88BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9948AAE91D05CAB5005F88BF /* Agoda.xcdatamodel */,
+			);
+			currentVersion = 9948AAE91D05CAB5005F88BF /* Agoda.xcdatamodel */;
+			path = Agoda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9948AAD61D05CAB4005F88BF /* Project object */;
+}

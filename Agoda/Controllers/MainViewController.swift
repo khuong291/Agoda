@@ -94,6 +94,11 @@ class MainViewController: UIViewController, MenuViewControllerDelegate, SearchVi
 
                 self.menuButton.setImage(UIImage(named: "menu"), forState: .Normal)
             })
+            childViewControllers.last?.removeFromSuperViewController()
+            // Add searchVC
+            let searchVC = storyboard?.instantiateViewControllerWithIdentifier("SearchViewController") as! SearchViewController
+            searchVC.delegate = self
+            addSubViewController(searchVC, index: 0)
         case "Favorites / History":
             self.hideMenuViewController()
             dispatch_async(dispatch_get_main_queue(), {
@@ -109,6 +114,11 @@ class MainViewController: UIViewController, MenuViewControllerDelegate, SearchVi
                 self.leftLabel.text = "Favorites"
                 self.rightLabel.text = "History"
             })
+            childViewControllers.last?.removeFromSuperViewController()
+            // Add FavoritesVC
+            let favoritesVC = storyboard?.instantiateViewControllerWithIdentifier("FavoritesViewController") as! FavoritesViewController
+            addSubViewController(favoritesVC, index: 0)
+
         case "Language", "Price Display", "Unit", "Bug Reporter": break
         default:
             self.hideMenuViewController()

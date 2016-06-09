@@ -134,11 +134,10 @@
 		9948AAF81D05CD0A005F88BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				995B0A2F1D09D7A000F8432F /* TableViewCell */,
 				995B0A281D09AC4200F8432F /* TabItemView */,
 				9936A9C61D080E0E00AE4E6C /* CheckDateView */,
 				9936A9C51D080E0300AE4E6C /* AgodaView */,
-				9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */,
-				995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -173,6 +172,15 @@
 				995B0A291D09AC5E00F8432F /* TabItemView.xib */,
 			);
 			name = TabItemView;
+			sourceTree = "<group>";
+		};
+		995B0A2F1D09D7A000F8432F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */,
+				995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		998A8B0F1D0699BF0013AFFD /* Extensions */ = {

@@ -10,6 +10,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var introView: UIView!
     @IBOutlet var currencyView: TabItemView!
     @IBOutlet var showMapView: TabItemView!
     @IBOutlet var sortView: TabItemView!
@@ -23,8 +25,8 @@ class ResultViewController: UIViewController {
 
         initTabViews()
 
-        introButton.layer.cornerRadius = 5
-        introButton.clipsToBounds = true
+        introView.makeViewCorner()
+        introButton.makeViewCorner()
     }
 
     private func initTabViews() {

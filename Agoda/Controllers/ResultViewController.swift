@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var introView: UIView!
@@ -40,5 +40,26 @@ class ResultViewController: UIViewController {
 
     @IBAction func backButtonTapped(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    // MARK: UITableViewDataSource
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ResultTableViewCell", forIndexPath: indexPath) as! ResultTableViewCell
+        return cell
+    }
+
+    // MARK: UITableViewDelegate
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 200
     }
 }

@@ -438,7 +438,7 @@
                                 <rect key="frame" x="0.0" y="273" width="375" height="394"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" rowHeight="186" id="iRV-DJ-WPN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" rowHeight="186" id="iRV-DJ-WPN" customClass="ResultTableViewCell" customModule="Agoda" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="186"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iRV-DJ-WPN" id="ASh-iX-tfp">
@@ -592,6 +592,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nSU-mi-Uer" id="hXd-L8-gOa"/>
+                                    <outlet property="delegate" destination="nSU-mi-Uer" id="Wxk-v3-4Zq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

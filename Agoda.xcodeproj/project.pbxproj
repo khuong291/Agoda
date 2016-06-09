@@ -15,6 +15,7 @@
 		9948AAEA1D05CAB5005F88BF /* Agoda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9948AAE81D05CAB5005F88BF /* Agoda.xcdatamodeld */; };
 		9948AAEC1D05CAB5005F88BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAEB1D05CAB5005F88BF /* Assets.xcassets */; };
 		9948AAEF1D05CAB5005F88BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948AAED1D05CAB5005F88BF /* LaunchScreen.storyboard */; };
+		995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B0A241D09A73200F8432F /* ResultViewController.swift */; };
 		998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B051D065EAB0013AFFD /* HomePageViewController.swift */; };
 		998A8B081D0660080013AFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B071D0660080013AFFD /* ViewController.swift */; };
 		998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B091D0661DF0013AFFD /* Place.swift */; };
@@ -39,6 +40,7 @@
 		9948AAEB1D05CAB5005F88BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9948AAEE1D05CAB5005F88BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9948AAF01D05CAB5005F88BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995B0A241D09A73200F8432F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Controllers/ResultViewController.swift; sourceTree = "<group>"; };
 		998A8B051D065EAB0013AFFD /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controllers/HomePageViewController.swift; sourceTree = "<group>"; };
 		998A8B071D0660080013AFFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		998A8B091D0661DF0013AFFD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				998A8B121D069D500013AFFD /* SearchViewController.swift */,
 				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
 				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
+				995B0A241D09A73200F8432F /* ResultViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				998A8B111D0699D00013AFFD /* UIView_Extension.swift in Sources */,
 				998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */,
 				998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */,
+				995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
 				9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */,
 				9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */,

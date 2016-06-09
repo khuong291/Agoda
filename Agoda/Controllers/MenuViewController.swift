@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MenuViewControllerDelegate: NSObjectProtocol {
+    func didSelectedItem(title: String)
+}
+
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
@@ -16,6 +20,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     let sections = ["My Account", "Settings", "Information"]
     var menuItems: [[MenuItem]]!
+
+    weak var delegate: MenuViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +42,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let point = MenuItem(itemImageName: "point", itemName: "PointsMAX")
         let promotion = MenuItem(itemImageName: "promotion", itemName: "Promotions")
         let language = MenuItem(itemImageName: "language", itemName: "Language")
-        let price = MenuItem(itemImageName: "price", itemName: "Price")
+        let price = MenuItem(itemImageName: "price", itemName: "Price Display")
         let unit = MenuItem(itemImageName: "unit", itemName: "Unit")
         let bug = MenuItem(itemImageName: "bug", itemName: "Bug Reporter")
         let customer = MenuItem(itemImageName: "customer", itemName: "Customer Service")
@@ -65,6 +71,20 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let menuItem = menuItems[indexPath.section][indexPath.row]
         cell.itemLabel.text = menuItem.itemName
         cell.itemImageView.image = menuItem.itemImage
+        if menuItem.itemName == "Price Display" {
+            let currencyLabel = UILabel()
+            currencyLabel.text = "USD"
+            currencyLabel.sizeToFit()
+            currencyLabel.translatesAutoresizingMaskIntoConstraints = false
+        }
         return cell
+    }
+
+    // MARK: UITableViewDelegate 
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let menuItem = menuItems[indexPath.section][indexPath.row]
+        let title = menuItem.itemName
+        delegate?.didSelectedItem(title)
     }
 }

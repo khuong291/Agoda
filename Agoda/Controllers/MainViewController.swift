@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MenuViewControllerDelegate {
     
     @IBOutlet var stackView: UIStackView!
     @IBOutlet var rightLabel: UILabel!
@@ -28,6 +28,9 @@ class MainViewController: UIViewController {
 
         topView.hidden = true
         stackView.hidden = true
+        lineView.hidden = true
+        leftLabel.hidden = true
+        rightLabel.hidden = true
 
         // Add MenuViewController
         addMenuViewController()
@@ -41,6 +44,7 @@ class MainViewController: UIViewController {
 
     private func addMenuViewController() {
         menuVC = storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
+        menuVC.delegate = self
         addSubViewController(menuVC)
         menuVC.view.frame.origin.x -= view.frame.width
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.hideMenuViewController))
@@ -72,5 +76,53 @@ class MainViewController: UIViewController {
                 self.menuShowed = true
             }
         }
+    }
+
+    // MARK: MenuViewController Delegate
+    func didSelectedItem(title: String) {
+        switch title {
+        case "Search":
+            self.hideMenuViewController()
+            dispatch_async(dispatch_get_main_queue(), { 
+                self.titleLabel.hidden = false
+                self.topView.hidden = true
+                self.stackView.hidden = true
+                self.lineView.hidden = true
+                self.leftLabel.hidden = true
+                self.rightLabel.hidden = true
+
+                self.menuButton.setImage(UIImage(named: "menu"), forState: .Normal)
+            })
+        case "Favorites / History":
+            self.hideMenuViewController()
+            dispatch_async(dispatch_get_main_queue(), {
+
+                self.topView.hidden = false
+                self.stackView.hidden = false
+                self.lineView.hidden = false
+                self.leftLabel.hidden = false
+                self.rightLabel.hidden = false
+                self.titleLabel.hidden = true
+
+                self.menuButton.setImage(UIImage(named: "blackmenu"), forState: .Normal)
+                self.leftLabel.text = "Favorites"
+                self.rightLabel.text = "History"
+            })
+        case "Language", "Price Display", "Unit", "Bug Reporter": break
+        default:
+            self.hideMenuViewController()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.topView.hidden = false
+                self.stackView.hidden = false
+                self.lineView.hidden = true
+                self.leftLabel.hidden = true
+                self.rightLabel.hidden = true
+                self.titleLabel.hidden = false
+
+                self.titleLabel.text = title
+                self.menuButton.setImage(UIImage(named: "blackmenu"), forState: .Normal)
+            }
+        }
+
     }
 }

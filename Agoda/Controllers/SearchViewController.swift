@@ -14,7 +14,7 @@ protocol SearchViewControllerDelegate: NSObjectProtocol {
 
 class SearchViewController: UIViewController {
 
-    @IBOutlet var agodaView: Agoda!
+    @IBOutlet var agodaView: AgodaView!
     @IBOutlet var searchView: UIView!
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var checkDateView: UIView!

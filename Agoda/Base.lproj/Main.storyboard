@@ -665,6 +665,69 @@
             </objects>
             <point key="canvasLocation" x="-333.5" y="-636.5"/>
         </scene>
+        <!--Sort And Filter View Controller-->
+        <scene sceneID="qoe-cH-Glg">
+            <objects>
+                <viewController storyboardIdentifier="SortAndFilterViewController" automaticallyAdjustsScrollViewInsets="NO" id="jGq-lB-95f" customClass="SortAndFilterViewController" customModule="Agoda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="heV-aa-hrt"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNe-LD-7N9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L1W-3T-U8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-cc-hqY" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort &amp; Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWy-kg-Xge">
+                                        <rect key="frame" x="60" y="18" width="105" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsS-rc-goq">
+                                        <rect key="frame" x="10" y="15" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Z9F-92-cEM"/>
+                                            <constraint firstAttribute="height" constant="30" id="wGP-2F-L4h"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="nSU-mi-Uer" eventType="touchUpInside" id="71G-VC-tp0"/>
+                                            <action selector="backButtonTapped:" destination="jGq-lB-95f" eventType="touchUpInside" id="NPK-e0-aL8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hsS-rc-goq" firstAttribute="leading" secondItem="Ejd-cc-hqY" secondAttribute="leading" constant="10" id="SAF-ky-MUS"/>
+                                    <constraint firstItem="hsS-rc-goq" firstAttribute="centerY" secondItem="Ejd-cc-hqY" secondAttribute="centerY" id="XQQ-JG-LqK"/>
+                                    <constraint firstItem="SWy-kg-Xge" firstAttribute="centerY" secondItem="Ejd-cc-hqY" secondAttribute="centerY" id="dHH-ui-Ugt"/>
+                                    <constraint firstItem="hsS-rc-goq" firstAttribute="top" secondItem="Ejd-cc-hqY" secondAttribute="top" constant="12" id="fy8-DO-9FM"/>
+                                    <constraint firstAttribute="height" constant="60" id="kXJ-P1-t2d"/>
+                                    <constraint firstItem="SWy-kg-Xge" firstAttribute="leading" secondItem="Ejd-cc-hqY" secondAttribute="leading" constant="60" id="vyK-Uo-NYV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fy8-DO-9FM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ejd-cc-hqY" secondAttribute="trailing" id="JWe-3m-4IW"/>
+                            <constraint firstItem="Ejd-cc-hqY" firstAttribute="top" secondItem="heV-aa-hrt" secondAttribute="bottom" id="cob-D8-8I1"/>
+                            <constraint firstItem="Ejd-cc-hqY" firstAttribute="leading" secondItem="L1W-3T-U8E" secondAttribute="leading" id="v2x-Ja-kBA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zS6-jG-TiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328.5" y="-1405.5"/>
+        </scene>
         <!--Favorites View Controller-->
         <scene sceneID="Ayy-cw-S4t">
             <objects>
@@ -1054,7 +1117,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puH-7G-yAO" customClass="Agoda" customModule="Agoda" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puH-7G-yAO" customClass="AgodaView" customModule="Agoda" customModuleProvider="target">
                                 <rect key="frame" x="275" y="20" width="100" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1417,7 +1480,7 @@
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sydney" translatesAutoresizingMaskIntoConstraints="NO" id="GUI-8c-OCS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
                                                                 </imageView>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-Mm-3jW" customClass="Agoda" customModule="Agoda" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-Mm-3jW" customClass="AgodaView" customModule="Agoda" customModuleProvider="target">
                                                                     <rect key="frame" x="100" y="20" width="100" height="30"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     <constraints>

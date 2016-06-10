@@ -27,6 +27,9 @@ class ResultViewController: UIViewController, UITableViewDataSource, UITableView
 
         introView.makeViewCorner()
         introButton.makeViewCorner()
+
+        let sortTapGesture = UITapGestureRecognizer(target: self, action: #selector(ResultViewController.openSortAndFilterViewController))
+        sortView.addGestureRecognizer(sortTapGesture)
     }
 
     private func initTabViews() {
@@ -36,6 +39,13 @@ class ResultViewController: UIViewController, UITableViewDataSource, UITableView
         showMapView.tabNameLabel.text = "Map"
         currencyView.tabImageView.image = UIImage(named: "currency")
         currencyView.tabNameLabel.text = "VND"
+    }
+
+    // MARK: OpenSortAndFilterViewController
+
+    func openSortAndFilterViewController() {
+        let sortAndFilterVC = storyboard?.instantiateViewControllerWithIdentifier("SortAndFilterViewController") as! SortAndFilterViewController
+        presentViewController(sortAndFilterVC, animated: true, completion: nil)
     }
 
     @IBAction func backButtonTapped(sender: AnyObject) {

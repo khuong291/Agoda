@@ -32,6 +32,7 @@
 		998A8B191D06D6FB0013AFFD /* CheckDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A8B181D06D6FB0013AFFD /* CheckDateView.xib */; };
 		998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */; };
 		998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1C1D0721E10013AFFD /* MenuViewController.swift */; };
+		99BEFE901D0AEFDD006E627E /* SortAndFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */; };
 		B844A5FF523DAFFCFA68ACE3 /* Pods_Agoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9724A429914B1E3FFFD675 /* Pods_Agoda.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		998A8B181D06D6FB0013AFFD /* CheckDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheckDateView.xib; path = Views/CheckDateView.xib; sourceTree = "<group>"; };
 		998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckDateView.swift; path = Views/CheckDateView.swift; sourceTree = "<group>"; };
 		998A8B1C1D0721E10013AFFD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
+		99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortAndFilterViewController.swift; path = Controllers/SortAndFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				995B0A321D09D87300F8432F /* MenuItemViewController */,
 				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
 				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
+				99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */,
 				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
 				995B0A2E1D09D2C600F8432F /* FavoritesViewController.swift in Sources */,
+				99BEFE901D0AEFDD006E627E /* SortAndFilterViewController.swift in Sources */,
 				998A8B151D069DC40013AFFD /* UIViewController_Extension.swift in Sources */,
 				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
 				995B0A2C1D09C9C500F8432F /* ResultTableViewCell.swift in Sources */,

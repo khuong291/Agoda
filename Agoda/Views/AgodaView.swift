@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Agoda: UIView {
+class AgodaView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet var blueView: UIView!

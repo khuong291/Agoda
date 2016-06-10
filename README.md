@@ -1,3 +1,3 @@
 # Agoda
 
-![](Agoda.gif)
+![](Demo.gif)

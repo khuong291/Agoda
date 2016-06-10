@@ -33,6 +33,9 @@
 		998A8B1B1D06D70A0013AFFD /* CheckDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */; };
 		998A8B1D1D0721E10013AFFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A8B1C1D0721E10013AFFD /* MenuViewController.swift */; };
 		99BEFE901D0AEFDD006E627E /* SortAndFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */; };
+		99BEFE921D0AF422006E627E /* CustomerServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEFE911D0AF422006E627E /* CustomerServiceViewController.swift */; };
+		99BEFE941D0AF838006E627E /* CustomerServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEFE931D0AF838006E627E /* CustomerServiceTableViewCell.swift */; };
+		99BEFE961D0AF8CF006E627E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEFE951D0AF8CF006E627E /* Country.swift */; };
 		B844A5FF523DAFFCFA68ACE3 /* Pods_Agoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9724A429914B1E3FFFD675 /* Pods_Agoda.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		998A8B1A1D06D70A0013AFFD /* CheckDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckDateView.swift; path = Views/CheckDateView.swift; sourceTree = "<group>"; };
 		998A8B1C1D0721E10013AFFD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
 		99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortAndFilterViewController.swift; path = Controllers/SortAndFilterViewController.swift; sourceTree = "<group>"; };
+		99BEFE911D0AF422006E627E /* CustomerServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerServiceViewController.swift; path = Controllers/CustomerServiceViewController.swift; sourceTree = "<group>"; };
+		99BEFE931D0AF838006E627E /* CustomerServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerServiceTableViewCell.swift; path = Views/CustomerServiceTableViewCell.swift; sourceTree = "<group>"; };
+		99BEFE951D0AF8CF006E627E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Models/Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 				998A8B1C1D0721E10013AFFD /* MenuViewController.swift */,
 				9936A9C31D080A0300AE4E6C /* MainViewController.swift */,
 				99BEFE8F1D0AEFDD006E627E /* SortAndFilterViewController.swift */,
+				99BEFE911D0AF422006E627E /* CustomerServiceViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 			children = (
 				998A8B091D0661DF0013AFFD /* Place.swift */,
 				9936A9C11D0802C600AE4E6C /* MenuItem.swift */,
+				99BEFE951D0AF8CF006E627E /* Country.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 			children = (
 				9936A9BF1D07F9C700AE4E6C /* MenuItemTableViewCell.swift */,
 				995B0A2B1D09C9C500F8432F /* ResultTableViewCell.swift */,
+				99BEFE931D0AF838006E627E /* CustomerServiceTableViewCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				995B0A251D09A73200F8432F /* ResultViewController.swift in Sources */,
 				998A8B081D0660080013AFFD /* ViewController.swift in Sources */,
 				9936A9C21D0802C600AE4E6C /* MenuItem.swift in Sources */,
+				99BEFE961D0AF8CF006E627E /* Country.swift in Sources */,
 				9936A9C41D080A0300AE4E6C /* MainViewController.swift in Sources */,
 				998A8B0E1D0699470013AFFD /* AgodaView.swift in Sources */,
 				995B0A2E1D09D2C600F8432F /* FavoritesViewController.swift in Sources */,
@@ -381,9 +391,11 @@
 				998A8B061D065EAB0013AFFD /* HomePageViewController.swift in Sources */,
 				995B0A2C1D09C9C500F8432F /* ResultTableViewCell.swift in Sources */,
 				9936A9C01D07F9C700AE4E6C /* MenuItemTableViewCell.swift in Sources */,
+				99BEFE921D0AF422006E627E /* CustomerServiceViewController.swift in Sources */,
 				995B0A271D09AC3D00F8432F /* TabItemView.swift in Sources */,
 				998A8B0A1D0661DF0013AFFD /* Place.swift in Sources */,
 				998A8B131D069D500013AFFD /* SearchViewController.swift in Sources */,
+				99BEFE941D0AF838006E627E /* CustomerServiceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

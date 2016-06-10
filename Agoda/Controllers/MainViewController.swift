@@ -119,6 +119,25 @@ class MainViewController: UIViewController, MenuViewControllerDelegate, SearchVi
             let favoritesVC = storyboard?.instantiateViewControllerWithIdentifier("FavoritesViewController") as! FavoritesViewController
             addSubViewController(favoritesVC, index: 0)
 
+        case "Customer Service":
+            self.hideMenuViewController()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.topView.hidden = false
+                self.stackView.hidden = false
+                self.lineView.hidden = true
+                self.leftLabel.hidden = true
+                self.rightLabel.hidden = true
+                self.titleLabel.hidden = false
+
+                self.titleLabel.text = title
+                self.menuButton.setImage(UIImage(named: "blackmenu"), forState: .Normal)
+            }
+
+            childViewControllers.last?.removeFromSuperViewController()
+            // Add CustomerService
+            let customerServiceVC = storyboard?.instantiateViewControllerWithIdentifier("CustomerServiceViewController") as! CustomerServiceViewController
+            addSubViewController(customerServiceVC, index: 0)
+
         case "Language", "Price Display", "Unit", "Bug Reporter": break
         default:
             self.hideMenuViewController()

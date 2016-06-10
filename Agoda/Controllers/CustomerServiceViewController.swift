@@ -56,20 +56,11 @@ class CustomerServiceViewController: UIViewController, UITableViewDataSource, UI
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomerServiceTableViewCell", forIndexPath: indexPath) as! CustomerServiceTableViewCell
         if indexPath.section == 0 {
-            let country = countries[0]
-            cell.countryNameLabel.text = country.name
-            cell.flagImageView.image = country.flagImage
-            cell.phoneNumberLabel.text = country.phone
+            cell.country = countries[0]
         } else if indexPath.section == 1 {
-            let country = countries[1]
-            cell.countryNameLabel.text = country.name
-            cell.flagImageView.image = country.flagImage
-            cell.phoneNumberLabel.text = country.phone
+            cell.country = countries[1]
         } else if indexPath.section == 2 {
-            let country = countries[2]
-            cell.countryNameLabel.text = country.name
-            cell.flagImageView.image = country.flagImage
-            cell.phoneNumberLabel.text = country.phone
+            cell.country = countries[2]
         }
         return cell
     }
